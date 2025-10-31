@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client_side_Validation</title>
+    <link rel="stylesheet" href="static/CSS/index2.css">
+    <link rel="icon" href="static/images/logo.png" sizes="16*16">
+    <script src="static/Js/index1.js"></script>
+</head>
+
+<body>
+    <hr>
+    <center>
+        <marquee behavior="alternate" direction="right" scrollamount="4px" hspace="99px" bgcolor="pink">Welcome to Sumit
+            Client_Side Registration page Validation</marquee>
+    </center>
+    <hr>
+    <br>
+    <center>
+        <form action="" method="post" onsubmit="return Test_case1()">
+            <table border="1">
+                <tr>
+                    <td><label for="">F_name :</label></td>
+                    <td><input type="text" placeholder="Enter your First name" autocomplete="off" id="A" size="50"></td>
+                </tr>
+                <tr>
+                    <td><label for="">L_name :</label></td>
+                    <td><input type="text" placeholder="Enter your Last name" autocomplete="off" id="B" size="50"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Username :</label></td>
+                    <td><input type="text" placeholder="Enter your Username" autocomplete="off" id="C" size="50"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Password :</label></td>
+                    <td><input type="password" placeholder="Enter your Password" autocomplete="off" id="D" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm_Password :</label></td>
+                    <td><input type="password" placeholder="Confirm your Password" autocomplete="off" id="E" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile_number:</label></td>
+                    <td><input type="tel" placeholder="Enter your Mobile number" autocomplete="off" id="F" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Mail:</label></td>
+                    <td><input type="email" placeholder="Enter your Gmail_Id" autocomplete="off" id="G" size="50"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td><input type="radio" name="gender" id="Male"><label for="">Male</label>
+                        <input type="radio" name="gender" id="Male"><label for="">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Programming Language: </label></td>
+                    <td><input type="checkbox" name="language" value="Javascript"><label for="">Javascript</label>
+                        <input type="checkbox" name="language" value="Typescript"><label for="">Typescript</label>
+                        <input type="checkbox" name="language" value="Angular Js"><label for="">Angular Js</label>
+                        <input type="checkbox" name="language" value="React Js"><label for="">React Js</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">City|State|Country:</label></td>
+                    <td><select name="" id="a">
+                            <option value="">--City--</option>
+                            <option value="">Hyderabad</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Delhi</option>
+                            <option value="">Chennai</option>
+                        </select>
+                        <select name="" id="b">
+                            <option value="">--State--</option>
+                            <option value="">Telangana</option>
+                            <option value="">Maharashtra</option>
+                            <option value="">Delhi</option>
+                            <option value="">Tamilnadu</option>
+                        </select>
+                        <select name="" id="c">
+                            <option value="">--Country--</option>
+                            <option value="">India</option>
+                            <option value="">Us</option>
+                            <option value="">UK</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Register|Reset|Clear Button:</label></td>
+                    <td>
+                        <input type="submit" value="Register" class="button">&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="Reset"class="button">&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="button" onclick="Test_case2()">Clear_Error_Msg</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Error Message if any:</label></td>
+                    <td><span id="XYZ"></span></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
